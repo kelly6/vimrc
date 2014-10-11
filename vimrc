@@ -21,7 +21,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'davidhalter/jedi-vim'
 "Plugin 'Valloric/YouCompleteMe'
 
-"Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neocomplete.vim'
 
 filetype plugin indent on     " required!
 "
@@ -102,10 +102,10 @@ set fileencodings=ucs-bom,utf-8
 set langmenu=zh_CN.UTF-8
 language message zh_CN.UTF-8
 
-func Eatchar(pat)
-      let c = nr2char(getchar(0))
-      return (c =~ a:pat) ? '' : c
-   endfunc
+"func Eatchar(pat)
+"      let c = nr2char(getchar(0))
+"      return (c =~ a:pat) ? '' : c
+"   endfunc
 iab ad advertisement
 
 iab printf printf(");<LEFT><LEFT><C-R>=Eatchar('\s')<CR>
